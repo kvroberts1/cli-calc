@@ -1,38 +1,44 @@
 user_input = 0
 number1 = 0
 number2 = 0
+exit = 0
 
-print("Select Operation desired.")
-print("1. Addition")
-print("2. Subtraction")
-print("3. Multiplication")
-print("4. Division")
+while exit == 0:
 
-try:
+        print("Select Operation desired.")
+        print("1. Addition")
+        print("2. Subtraction")
+        print("3. Multiplication")
+        print("4. Division")
+        print("5. Exit")
 
-    user_input = float(input("Select Number 1 - 4: "))
+        try:
 
-    if user_input == 1 :
-            number1 = float(input("You choose addition. What is the first number you would like to add: "))
-            number2 = float(input(f'{number1} + X. What does X equal? '))
-            print(number1 + number2)
-    elif user_input == 2 :
-            number1 = float(input("You choose subtraction. What is the first number you would like to subtract: "))
-            number2 = float(input(f'{number1} - X. What does X equal? '))
-            print(number1 - number2)
-    elif user_input == 3 :
-            number1 = float(input("You choose multiplication. What is the first number you would like to multiply: "))
-            number2 = float(input(f'{number1} * X. What does X equal? '))
-            print(number1 * number2)
-    elif user_input == 4 :
-            number1 = float(input("You choose division. What is the first number you would like to divide: "))
-            number2 = float(input(f'{number1} / X. What does X equal? '))
-            if number2 == 0 :
-                print("0")
-            else:
-                print(number1 / number2)
-    else:
-            print("What is happening? You screwed that up.")
+                user_input = float(input("Select Number 1 - 5: "))
 
-except:
-    print("Only INTs allowed")
+                if user_input == 1 :
+                        number1 = float(input("You choose addition. What is the first number you would like to add: "))
+                        number2 = float(input(f'{number1} + X. What does X equal? '))
+                        print(number1 + number2)
+                elif user_input == 2 :
+                        number1 = float(input("You choose subtraction. What is the first number you would like to subtract: "))
+                        number2 = float(input(f'{number1} - X. What does X equal? '))
+                        print(number1 - number2)
+                elif user_input == 3 :
+                        number1 = float(input("You choose multiplication. What is the first number you would like to multiply: "))
+                        number2 = float(input(f'{number1} * X. What does X equal? '))
+                        print(number1 * number2)
+                elif user_input == 4 :
+                        number1 = float(input("You choose division. What is the first number you would like to divide: "))
+                        number2 = float(input(f'{number1} / X. What does X equal? '))
+                        if number2 == 0 :
+                                print("0")
+                        else:
+                                print(number1 / number2)
+                elif user_input == 5 :
+                        exit = 1
+                else:
+                        print("What is happening? You screwed that up.")
+
+        except:
+                print("Only INTs allowed")
