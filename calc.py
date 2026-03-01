@@ -2,6 +2,7 @@ user_input = 0
 number1 = 0
 number2 = 0
 status_off = 0
+answer = 0
 
 def add(number1, number2):
         return(number1 + number2)
@@ -34,13 +35,17 @@ while status_off == 0:
                 number2 = float(input("Choose your second number: "))
 
                 if user_input == 1 :
-                        print(add(number1, number2))
+                        answer = add(number1, number2)
+                        print(answer)
                 elif user_input == 2 :
-                        print(sub(number1, number2))
+                        answer = sub(number1, number2)
+                        print(answer)
                 elif user_input == 3 :
-                        print(multi(number1, number2))
+                        answer = multi(number1, number2)
+                        print(answer)
                 elif user_input == 4 :
-                        print(div(number1, number2))
+                        answer = div(number1, number2)
+                        print(answer)
                 elif user_input == 5 :
                         status_off = 1
 
