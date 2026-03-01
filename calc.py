@@ -1,7 +1,6 @@
 user_input = 0
 number1 = 0
 number2 = 0
-answer = 0
 status_off = 0
 
 def add(number1, number2):
