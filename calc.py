@@ -39,16 +39,16 @@ while status_off == 0:
 
                         if user_input == 1 :
                                 answer = add(number1, number2)
-                                print(answer)
+                                print(f' {number1} + {number2} = {answer}')
                         elif user_input == 2 :
                                 answer = sub(number1, number2)
-                                print(answer)
+                                print(f'{number1} - {number2} = {answer}')
                         elif user_input == 3 :
                                 answer = multi(number1, number2)
-                                print(answer)
+                                print(f'{number1} * {number2} = {answer}')
                         elif user_input == 4 :
                                 answer = div(number1, number2)
-                                print(answer)
+                                print(f' {number1} / {number2} = {answer}')
                 else:
                         status_off = 1
 
