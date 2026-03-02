@@ -15,7 +15,7 @@ def multi(number1 , number2):
 
 def div(number1, number2):
         if number2 == 0 :
-                return("0")
+                return("You can't divide by 0")
         else:
                 return(number1 / number2)
 
@@ -52,5 +52,5 @@ while status_off == 0:
                 else:
                         status_off = 1
 
-        except:
+        except ValueError:
                 print("Only INTs allowed")
